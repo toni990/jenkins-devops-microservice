@@ -1,11 +1,11 @@
 //DECLARATIVE
 pipeline {
 	//agent any
-	agent { any {image 'node:16.3-alpine3.11'} }
+	agent { any {image 'maven:3.8.1'} }
 	stages{
 		stage('Build') {
 		steps{
-			sh 'node --version'
+			sh 'mvn --version'
 			echo "Build"
      	}
 	  }
