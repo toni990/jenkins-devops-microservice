@@ -1,6 +1,8 @@
 //DECLARATIVE
 pipeline {
-	agent any
+	 agent {
+        docker { image 'node:14-alpine' }
+    }
 	//agent { any {image 'maven:3.8.1'} }
 	environment {
 		dockerHome = tool 'myDocker'
@@ -76,4 +78,3 @@ pipeline {
 	    }
       }
     }
-	
