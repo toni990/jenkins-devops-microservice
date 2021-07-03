@@ -9,7 +9,7 @@ pipeline {
 			echo "Build"
 			echo "$PATH - $PATH"
 			echo "BUILD-NUMBER - $env.BUILD_NUMBERS"
-			echo "BUILD_ID" - $env.BUILD_ID"
+			echo "BUILD_ID - $env.BUILD_ID"
 			echo "BUILD_TAG - $env.BUILD_TAG"
 			echo "BUILD-URL - $env.BUILD_URL"
      	}
