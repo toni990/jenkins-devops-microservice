@@ -60,7 +60,9 @@ pipeline {
 			dockerImage.push('latest');
 		             }
 		          }
-		       }
+		     }
+		}
+	}
         
    post {
 	   always {
@@ -74,5 +76,4 @@ pipeline {
 	    }
       }
     }
-  }
-}
+	
