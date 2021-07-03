@@ -1,7 +1,7 @@
 //DECLARATIVE
 pipeline {
 	 agent {
-        docker { image 'node:14-alpine' }
+        docker { image 'gradle:6.7-jdk11' }
     }
 	//agent { any {image 'maven:3.8.1'} }
 	environment {
